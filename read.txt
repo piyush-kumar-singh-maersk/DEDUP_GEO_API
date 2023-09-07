@@ -1,0 +1,48 @@
+1. API Start --> load db data in data frame 
+2.  API END POINT --> city name , country name , state name ,lat ,long , altName array , RKST
+    2.1 --> MAtch (NAME --> city name , name --> ALT NAME Array, lat ,long, country , state  )   -->   CITY CREATE 
+                  Duplicate --> response send --> user not possible to insert 
+                  OK not duplicate --> response send --> user ok i m inserting in DB --> u also insert in ur dataframe
+3. API seperate end point --> 
+                                    CITY UPDATES 
+                     3.1 for City name match city name and altname match  country and state 
+                     3.2 for LAT AND LONG only lat long match 
+                     3.3 for altname only match 
+
+
+DEDUPLICATION
+METHOD 1  CITY NAME MATCH WITH NAME  STATE COUNTRY  
+METHOD 2  CITY NAME MATCH WITH ALTNAME STATE COUNTRY 
+METHOD 3   CITY LAT LONG with lat long STATE COUNTRY
+METHOD 4   ALTNAME MATCH with ALTNAME and CITY name both
+METHOD 5   UNLOC MATCH
+
+VERIFICATION
+CHECK   STATE-COUNTRY HR
+CHECK   POSTAL CODE [FORMAT]
+CHECK   TIMEZONE [OLSEN TIMEZONE, TIMEZONE]
+
+
+exact match first -> fuzzy match
+city rkst - check in input
+
+
+
+############ dataframe ############
+
+REQUEST
+RESPONSE
+STATUS_CODE
+
+
+
+
+
+
+
+
+status - check
+
+
+
+
